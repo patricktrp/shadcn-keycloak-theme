@@ -7,6 +7,7 @@ import type { PageProps } from "keycloakify/login/pages/PageProps";
 import { getKcClsx, type KcClsx } from "keycloakify/login/lib/kcClsx";
 import type { KcContext } from "../KcContext";
 import type { I18n } from "../i18n";
+import { Button } from "@/components/ui/button";
 
 export default function Login(props: PageProps<Extract<KcContext, { pageId: "login.ftl" }>, I18n>) {
     const { kcContext, i18n, doUseDefaultCss, Template, classes } = props;
@@ -23,7 +24,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
     const [isLoginButtonDisabled, setIsLoginButtonDisabled] = useState(false);
 
     return (
-        <div>hi</div>
+        <Button>hi</Button>
         // <Template
         //     kcContext={kcContext}
         //     i18n={i18n}
